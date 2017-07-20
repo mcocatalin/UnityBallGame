@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerController : MonoBehaviour {
 
     public Rigidbody ballRB;
-    public float speed = 10f;
+    public float speed;
 
 
     void Update() // movement per frame
@@ -17,7 +17,7 @@ public class playerController : MonoBehaviour {
     {
         ballRB = new Rigidbody();
         ballRB = GetComponent<Rigidbody>();
-        speed = 100f;
+        speed = 20f;
     }
 
     void FixedUpdate() // physics init
